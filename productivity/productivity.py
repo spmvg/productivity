@@ -11,8 +11,8 @@ from google.auth.transport.requests import Request
 
 SCOPES = ['https://www.googleapis.com/auth/calendar',
           'https://www.googleapis.com/auth/tasks']
-TOKEN_FILE = os.path.join(os.path.split(__file__)[0], 'credentials', 'token.pickle')
-CREDENTIALS_FILE = os.path.join(os.path.split(__file__)[0], 'credentials', 'credentials.json')
+TOKEN_FILE = os.path.join(os.path.split(__file__)[0], '..', 'credentials', 'token.pickle')
+CREDENTIALS_FILE = os.path.join(os.path.split(__file__)[0], '..', 'credentials', 'credentials.json')
 TIMEZONE = 'Europe/Amsterdam'
 GOOGLE_TASKS_INBOX_ID = 'insert_inbox_ID_here'  # use `Inbox.get_lists`
 GOOGLE_TASKS_WAITING_LIST_ID = 'insert_waiting_list_ID_here'  # use `Inbox.get_lists`
@@ -332,7 +332,7 @@ class Console:
         self._inbox.set_current_list('waiting')
 
     def _view_help(self):
-        with open(os.path.join(os.path.split(__file__)[0], 'README.md'), 'r') as f:
+        with open(os.path.join(os.path.split(__file__)[0], '..', 'README.md'), 'r') as f:
             print(f.read())
             print()
 

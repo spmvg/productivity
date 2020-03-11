@@ -2,7 +2,7 @@
 Automates common tasks in Google Calendar and Google Tasks.
 
 ### Setup
-* Use `pip` to install the dependencies in `requirements.txt`.
+* Run `pip install -e .` in the current folder to install.
 * Create Google Cloud OAuth credentials and put them in `credentials/credentials.json`.
 * Run `run.py`.
 
