@@ -1,2 +1,3 @@
-from productivity.productivity import Console
+from productivity.console import Console
+
 Console().run()

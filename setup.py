@@ -11,7 +11,8 @@ setuptools.setup(
         'google-api-python-client',
         'google-auth-httplib2',
         'google-auth-oauthlib',
+        'parameterized',
         'pytz'
     ],
-    python_requires='>=3.6'
+    python_requires='>=3.7'
 )
